@@ -2,6 +2,8 @@
     --bg-color: #0D1117;
     --text-color: #E6EDF3;
     --link-color: #58A6FF;
+    --card-bg: #161b22;
+    --card-bg-hover: #1C2128;
 }
 
 html,body {
@@ -46,6 +48,46 @@ html,body {
     color: var(--text-color);
 }
 
-.card {
-    background-color: #FFF;
+.card-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minimax(300px,1fr));
+    gap: 20px;
+}
+
+.card-container {
+    padding: 24px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    transition: transform 0.2 ease, box-shadow 0.2 ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(88,166,255,0.2);
+    background-color: var(--card-bg-hover);
+}
+
+.card-container a {
+    text-decoration: none;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.boxes {
+    padding: 4px 8px;
+    display: inline-block;
+    background: #0D1117;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    color: #C9D1D9;
 }
