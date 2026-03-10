@@ -35,5 +35,17 @@ html,body {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    color: var(--text-color)
+    color: var(--text-color);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.main {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+}
+
+.card {
+    background-color: #FFF;
 }
