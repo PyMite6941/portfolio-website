@@ -1,0 +1,10 @@
+{
+    "packages": ["pandas","numpy"],
+    "fetch": [
+        {
+            "from": "scripts/finance",
+            "to_folder": "finance",
+            "files": ["core_stuff.py","cli_app.py","Dashboard.py"]
+        }
+    ]
+}
