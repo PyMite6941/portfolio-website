@@ -2,12 +2,12 @@
     "packages": ["pandas","numpy"],
     "fetch": [
         {
-            "from": "assets/finance",
+            "from": "../assets/finance",
             "to_folder": "finance",
             "files": ["core_stuff.py","cli_app.py","Dashboard.py"]
         },
         {
-            "from": "assets/connect4",
+            "from": "../assets/connect4",
             "to_folder": "connect4",
             "files": [""]
         }
