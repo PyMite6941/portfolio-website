@@ -4,6 +4,7 @@
     --link-color: #58A6FF;
     --card-bg: #161b22;
     --card-bg-hover: #1C2128;
+    color-scheme: dark;
 }
 
 html,body {
@@ -24,7 +25,8 @@ html,body {
 
 .nav-item {
     list-style: none;
-    padding-left: 12px;
+    padding-left: 8px;
+    padding-right: 4px;
 }
 
 .nav-link {
@@ -43,15 +45,20 @@ html,body {
 }
 
 .main {
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
     color: var(--text-color);
+}
+
+.text-link {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 .card-grid {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minimax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
     gap: 20px;
 }
 
