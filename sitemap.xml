@@ -110,7 +110,13 @@
 	</url>
 	<url>
 		<loc>https://pymite6941.is-a.dev/pages/project-pages/pixelcode.html</loc>
-		<lastmod>2026-06-18</lastmod>
+		<lastmod>2026-06-26</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://pymite6941.is-a.dev/pages/project-pages/pixel-assistant.html</loc>
+		<lastmod>2026-06-26</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>

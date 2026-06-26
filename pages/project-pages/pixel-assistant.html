@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-depth="2">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
+		<meta
+			name="description"
+			content="Pixel Assistant - Matt Gresham's modular terminal AI assistant for notes, todos, calendar commands, voice mode, file generation, and self-update workflows." />
+		<link rel="canonical" href="https://pymite6941.is-a.dev/pages/project-pages/pixel-assistant.html" />
+		<link rel="stylesheet" type="text/css" href="../../index.css" />
+		<title>Pixel Assistant | Matt G</title>
+		<script src="../../assets/js/site-style.js" defer></script>
+	</head>
+	<body>
+		<div id="site-nav"></div>
+		<header class="hero-section">
+			<h1>Pixel Assistant</h1>
+			<p class="hero-copy">A terminal AI assistant for productivity features beyond code</p>
+		</header>
+		<main>
+			<div id="top"></div>
+			<p class="project-page-nav">
+				<a class="text-link" href="../projects.html">All projects</a>
+				&nbsp;·&nbsp;
+				<a class="text-link" href="../about-me.html">About Matt</a>
+				&nbsp;·&nbsp;
+				<a class="text-link" href="pixelcode.html">PixelCode engine</a>
+			</p>
+			<a class="text-link" href="https://github.com/PyMite6941/Pixel-Assistant" target="_blank" rel="noreferrer">View on GitHub</a>
+			<br /><br />
+			<h2 style="text-align: center">Description</h2>
+			<br />
+			<article>
+				<strong style="color: var(--text-color)">Motivation:</strong> PixelCode is
+				the coding engine. Pixel Assistant is a separate terminal assistant for
+				everyday AI features: notes, todos, reminders, voice, calendar commands,
+				file generation, and self-update workflows.
+				<br /><br />
+				<strong style="color: var(--text-color)">What it does:</strong> Runs as a
+				modular command-line assistant. It can save and search notes, manage todos,
+				add journal entries, remember facts, run timers, draft email, translate,
+				summarize, teach a topic, generate slides or PDFs, check weather, run small
+				Python snippets, and switch between LLM providers.
+				<br /><br />
+				<strong style="color: var(--text-color)">Provider options:</strong> The
+				assistant can run with Groq, Gemini, or Mistral. It also has a smart mode,
+				a voice-only mode, debug routing, and offline speech-to-text via Whisper
+				tiny.
+				<br /><br />
+				<strong style="color: var(--text-color)">How it was built:</strong> Python
+				is the core language. <code>src/run.py</code> handles launch options,
+				<code>src/main.py</code> holds the main assistant loop, and feature modules
+				cover calendar, slides, PDFs, image generation, video generation, and
+				self-updates.
+			</article>
+			<br />
+			<h2 style="text-align: center">Architecture</h2>
+			<br />
+			<div class="ascii-diagram">  Pixel Assistant - Terminal Feature Router
+  ===========================================
+
+  src/run.py
+      |
+      v
+  launch options:
+    --provider groq / gemini / mistral
+    --smart
+    --voice-only
+    --whisper
+      |
+      v
+  src/main.py
+    command parser + assistant loop
+      |
+      +-- notes, todos, journal, memories
+      +-- timers, reminders, Pomodoro, daily check
+      +-- email, translate, summarize, teach
+      +-- calendar, weather, wiki, system tools
+      +-- slides, PDF, image and video generation
+      +-- self-update checks, feature adds, rollback
+
+  Persistent files keep history, notes, todos, memories,
+  journal entries, teaching history, update logs, and backups.</div>
+			<br />
+			<h2 style="text-align: center">Dev Notes</h2>
+			<div class="dev-notes">
+				<div class="dev-note">
+					<h3>Problem Solved</h3>
+					<p>Most assistants stop at chat. Pixel Assistant turns common AI tasks into
+					terminal commands so the assistant can help with reminders, files,
+					learning, calendar checks, and local productivity without becoming a
+					full coding agent.</p>
+				</div>
+				<div class="dev-note">
+					<h3>Technical Highlights</h3>
+					<p>The command system keeps everyday features small and explicit.
+					Provider switching makes the assistant portable, while persistent files
+					keep useful context between runs.</p>
+				</div>
+				<div class="dev-note">
+					<h3>What's Next</h3>
+					<p>The README points to richer voice, provider, calendar, file generation,
+					and self-update workflows. The page stays separate from PixelCode because
+					this engine is built for broader assistant features, not just code work.</p>
+				</div>
+			</div>
+			<br />
+			<a class="text-link" href="#top">Back to top</a>
+			<br />
+		</main>
+		<div id="site-footer"></div>
+	</body>
+</html>

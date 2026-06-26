@@ -87,9 +87,17 @@
 		'/pages/project-pages/pixelcode.html': {
 			name: 'PixelCode',
 			description:
-				'PixelCode by Matt Gresham is a self-hosted AI coding assistant built on FastAPI and Ollama, designed to run on your own infrastructure.',
+				'PixelCode by Matt Gresham is the Pixel Code Engine for AI-powered code orchestration, file tools, terminal commands, and provider routing.',
 			type: 'SoftwareApplication',
 			applicationCategory: 'DeveloperApplication',
+			programmingLanguage: ['Python'],
+		},
+		'/pages/project-pages/pixel-assistant.html': {
+			name: 'Pixel Assistant',
+			description:
+				'Pixel Assistant by Matt Gresham is a modular terminal AI assistant for notes, todos, calendar commands, voice mode, file generation, and self-update workflows.',
+			type: 'SoftwareApplication',
+			applicationCategory: 'ProductivityApplication',
 			programmingLanguage: ['Python'],
 		},
 		'/pages/project-pages/fitness-ai-agents.html': {
