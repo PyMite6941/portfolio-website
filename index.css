@@ -236,6 +236,33 @@ img, iframe, video, embed {
 	text-align: center;
 }
 
+.project-inspection-path {
+	width: 100%;
+	max-width: 820px;
+	margin: 0 auto 22px;
+	text-align: center;
+	color: #8b949e;
+	line-height: 1.6;
+}
+
+.project-inspection-path h2 {
+	margin: 0 0 10px;
+	color: var(--text-color);
+	font-size: 30px;
+}
+
+.project-inspection-path p {
+	margin: 0;
+}
+
+.project-inspection-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px 20px;
+	margin-top: 12px;
+}
+
 .filter-fieldset {
 	border: 1px solid var(--border-color);
 	border-radius: 10px;
