@@ -25,7 +25,10 @@
 		<div id="site-nav"></div>
 		<header class="hero-section">
 			<h1>Magellan</h1>
-			<p class="hero-copy">A Go spider + React search engine, deployed on Vercel</p>
+			<p class="hero-copy">
+				A Go spider and React search engine with a live browser demo,
+				implementation notes, and architecture proof
+			</p>
 		</header>
 		<main>
 			<div id="top"></div>
@@ -34,34 +37,43 @@
 				&nbsp;·&nbsp;
 				<a class="text-link" href="../about-me.html">About Matt</a>
 			</p>
-			<h2 style="text-align: center; font-size: 30px"
-				>Try it in the browser!</h2
-			>
-			<p>
-				The search frontend is linked below. The project notes show the crawler,
-				indexing path, and React app that feed it.
-			</p>
-			<br />
-			<a
-				class="text-link"
-				href="https://magellan-search-engine.vercel.app/"
-				>Open in full page</a
-			>
-			<br />
-			<br />
-			<a
-				class="text-link"
-				href="../30DaysOfAIProgrammingPrompts/Day12.html"
-				>View the React app notes</a
-			>
-			<br />
-			<br />
-			<a
-				class="text-link"
-				href="../30DaysOfAIProgrammingPrompts/Day13.html"
-				>View the Go spider notes</a
-			>
-			<br />
+			<section
+				class="project-demo-path"
+				aria-labelledby="magellan-demo-heading">
+				<h2 id="magellan-demo-heading">Try the live Magellan demo</h2>
+				<p>
+					Start with the deployed search frontend to inspect the browser
+					experience, then use the implementation notes and diagrams below to
+					see how the Go spider builds the SQLite and Turso-backed index.
+				</p>
+				<div class="project-demo-actions">
+					<a
+						class="project-demo-primary"
+						href="https://magellan-search-engine.vercel.app/"
+						>Open the live search demo</a
+					>
+				</div>
+				<p class="project-demo-supporting">
+					Supporting proof:
+					<a
+						class="text-link"
+						href="../30DaysOfAIProgrammingPrompts/Day12.html"
+						>React app notes</a
+					>
+					<span aria-hidden="true"> · </span>
+					<a
+						class="text-link"
+						href="../30DaysOfAIProgrammingPrompts/Day13.html"
+						>Go spider notes</a
+					>
+					<span aria-hidden="true"> · </span>
+					<a
+						class="text-link"
+						href="#architecture-proof"
+						>Architecture diagrams</a
+					>
+				</p>
+			</section>
 			<h2 style="text-align: center">What Visitors Can Inspect</h2>
 			<br />
 			<article>
@@ -94,7 +106,11 @@
 				linked above so visitors can inspect both sides of the build.</article
 			>
 			<br />
-			<h2 style="text-align: center">How It Works</h2>
+			<h2
+				id="architecture-proof"
+				style="text-align: center">
+				How It Works
+			</h2>
 			<br />
 			<div class="ascii-diagram">  Go Spider — BFS Web Crawl
   ════════════════════════════

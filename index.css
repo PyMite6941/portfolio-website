@@ -231,6 +231,61 @@ img, iframe, video, embed {
 	line-height: 1.35;
 }
 
+.project-demo-path {
+	width: 100%;
+	max-width: 860px;
+	margin: 0 auto 24px;
+	padding: 0 20px;
+	text-align: center;
+	color: #8b949e;
+	line-height: 1.6;
+}
+
+.project-demo-path h2 {
+	margin: 0 0 10px;
+	color: var(--text-color);
+	font-size: 30px;
+}
+
+.project-demo-path p {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.project-demo-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 14px;
+}
+
+.project-demo-primary {
+	display: inline-block;
+	padding: 10px 16px;
+	border: 1px solid var(--button-color);
+	border-radius: 8px;
+	background: var(--button-color);
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.project-demo-primary:hover,
+.project-demo-primary:focus {
+	border-color: #a371f7;
+	background: #a371f7;
+}
+
+.project-demo-supporting {
+	margin-top: 14px !important;
+}
+
+.project-demo-supporting .text-link {
+	white-space: nowrap;
+}
+
 .project-page-nav {
 	margin: 0 0 22px;
 	text-align: center;
