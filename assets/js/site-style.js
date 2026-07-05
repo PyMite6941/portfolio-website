@@ -118,7 +118,7 @@
                     <a href="${p.contact}">Contact me</a>
                 </div>
             </div>
-            <p class="foot-copy">&copy; 2026 Matt Gresham. All rights reserved. &middot; <a href="https://tin.computer">Growth by Tin</a></p>
+            <p class="foot-copy">&copy; 2026 Matt Gresham. All rights reserved.</p>
         </footer>`,
 	);
 
