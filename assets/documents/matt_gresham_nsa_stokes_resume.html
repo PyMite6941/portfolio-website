@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Matt Gresham — NSA Stokes Scholarship Resume</title>
+		<title>Matthew Gresham — NSA Stokes Scholarship Resume</title>
 		<style>
 			* {
 				margin: 0;
@@ -145,11 +145,16 @@
 	<body>
 		<!-- Header -->
 		<div class="header-top">
-			<h1>Matt Gresham</h1>
+			<h1>Matthew Gresham</h1>
 			<div class="tagline">Cybersecurity &nbsp;·&nbsp; Software Development &nbsp;·&nbsp; AI/ML Security</div>
 			<div class="contact">
-				greshamd27@gmail.com &nbsp;|&nbsp; +66 064 407 8618 &nbsp;|&nbsp;
-				github.com/PyMite6941 &nbsp;|&nbsp; Bangkok, Thailand &nbsp;|&nbsp; U.S. Citizen
+				16009 Mills Orchard Drive, Gaithersburg, MD 20878 &nbsp;|&nbsp; greshamd27@gmail.com &nbsp;|&nbsp; +66 064 407 8618
+			</div>
+			<div class="contact">
+				github.com/PyMite6941 &nbsp;|&nbsp; U.S. Citizen &nbsp;|&nbsp; Currently studying abroad in Bangkok, Thailand
+			</div>
+			<div class="contact" style="margin-top: 3px">
+				<a href="https://docs.google.com/document/d/1lqnB_2FJ-5FDie6xKocMaW2oFisSr_3qFuio4cZ8V2k/preview" style="color: #000; font-weight: bold; text-decoration: underline">NSA Stokes Scholarship Essay →</a>
 			</div>
 		</div>
 
@@ -173,12 +178,13 @@
 					<span class="date">Expected Graduation: May 2027</span>
 				</div>
 				<div class="sub">
-					GPA: 3.88 / 4.0 &nbsp;&middot;&nbsp; SAT: 1240 (650 Math / 590 Reading &amp; Writing)
+					GPA: 3.88 / 4.0 &nbsp;&middot;&nbsp; SAT: 1250 (650 Math / 600 Reading &amp; Writing)
 				</div>
 				<p style="font-size: 9.5pt; line-height: 1.4; margin-top: 2px">
-					<strong>Relevant Coursework:</strong> AP Computer Science Principles (Grade: A+),
-					AP Computer Science A (Current &mdash; Java), AP Cybersecurity (Current),
-					AP English Language &amp; Composition, Pre-Calculus, Physics, Philosophy &amp; Worldview<br />
+					<strong>AP Courses:</strong> Computer Science Principles (2025&ndash;26, A+), English Language &amp; Composition (2025&ndash;26),
+					Computer Science A (2026&ndash;27, in progress &mdash; Java), Cybersecurity (2026&ndash;27, in progress)<br />
+					<strong>Honors Courses:</strong> HS Band (2025&ndash;27, in progress), Tech Theatre (2025&ndash;27, in progress)<br />
+						<strong>Other Coursework:</strong> Pre-Calculus (2025&ndash;26), Physics (2025&ndash;26), Philosophy &amp; Worldview (2025&ndash;26)<br />
 					<strong>Additional:</strong> Codecademy Intro to IT, BYU United States History
 				</p>
 			</div>
@@ -188,16 +194,57 @@
 		<div class="section">
 			<div class="section-title">Technical Skills</div>
 			<div class="skills-block">
-				<strong>Programming Languages:</strong> Python, Go, JavaScript / React, Bash, HTML &amp; CSS,
-				Java (learning via AP Computer Science A)<br />
+				<strong>Programming Languages:</strong> Python, JavaScript / React, Go, Java (learning via AP Computer Science A),
+				Bash, HTML &amp; CSS<br />
 				<strong>Cybersecurity Concepts:</strong> Threat modeling, prompt-injection &amp; adversarial-LLM
 				vulnerabilities, input sanitization, jailbreak / system-prompt-extraction defense, SQL injection, XSS,
 				brute forcing, OWASP principles, ethical hacking<br />
 				<strong>Security Tools:</strong> Kali Linux, DVWA, Git/GitHub, Linux terminal, Raspberry Pi,
 				Ollama (local LLM red-teaming)<br />
 				<strong>AI / ML:</strong> RAG pipelines, ChromaDB, PyTorch, Q-Learning / Deep Q-Networks, Minimax &amp;
-				Alpha-Beta pruning
+				Alpha-Beta pruning<br />
+				<strong>Areas of Interest:</strong> AI / LLM security, cyber defense &amp; threat detection,
+				cryptography, reverse engineering, secure software design<br />
+				<strong>Spoken Languages:</strong> English (native), French (intermediate), Indonesian (in progress),
+				Korean <span class="todo">(confirm proficiency level or remove)</span>
 			</div>
+		</div>
+
+		<!-- Work Experience -->
+		<div class="section">
+			<div class="section-title">Work Experience</div>
+			<div class="entry">
+				<div class="entry-header">
+					<span class="org">Saphan Siam Foundation &mdash; Social Media &amp; Communications Lead (Volunteer)</span>
+					<span class="date">2025 &ndash; 2026</span>
+				</div>
+				<div class="sub">Bangkok, Thailand &nbsp;&middot;&nbsp; Eagle Scout Service Project</div>
+				<ul>
+					<li>
+						Led the buildout of a Bangkok-based non-profit&rsquo;s social-media presence across Line,
+						Facebook, and Instagram, from zero prior organizational presence.
+					</li>
+					<li>
+						Advised the foundation on content strategy and posting cadence as the project&rsquo;s
+						sole technical/communications lead.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- CTF & Security Training -->
+		<div class="section">
+			<div class="section-title">CTF &amp; Security Training</div>
+			<ul>
+				<li>
+					<strong>picoCTF</strong> &mdash;
+					<span class="todo">[add: number of challenges solved / category breakdown / ranking, if any]</span>
+				</li>
+				<li>
+					<strong>PortSwigger Web Security Academy</strong> &mdash;
+					<span class="todo">[add: number of labs completed and tracks, e.g. "XX labs completed across SQLi, XSS, and access-control tracks"]</span>
+				</li>
+			</ul>
 		</div>
 
 		<!-- Technical Projects -->
@@ -227,13 +274,16 @@
 						mitigates prompt-injection and adversarial attacks against Large Language Models (LLMs).
 					</li>
 					<li>
-						Built a categorized library of attack prompts &mdash; prompt injection, DAN jailbreak, roleplay
-						bypass, and system-prompt extraction &mdash; and a FastAPI backend that fires them at local Ollama
-						models and streams pass/fail results to a React/Vite frontend as NDJSON.
+						Built a four-category library of attack prompts &mdash; prompt injection, DAN jailbreak, roleplay
+						bypass, and system-prompt extraction
+						(<span class="todo">[add: total prompt count, e.g. "38 prompts"]</span>) &mdash; and a FastAPI
+						backend that fires them at local Ollama models and streams pass/fail results to a React/Vite
+						frontend as NDJSON.
 					</li>
 					<li>
 						Managed rapid prototyping and code optimization using AI-assisted pair programming, validating
-						software functionality through rigorous test cases and full WSL2 support.
+						software functionality through
+						<span class="todo">[add: number of test cases, e.g. "23 tests"]</span> and full WSL2 support.
 					</li>
 					<li>
 						Mapped identified vulnerabilities against emerging AI-security frameworks (OWASP LLM Top 10) to
@@ -258,6 +308,47 @@
 			</div>
 		</div>
 
+		<!-- Additional Projects -->
+		<div class="section">
+			<div class="section-title">Additional Projects</div>
+
+			<div class="entry">
+				<div class="entry-header">
+					<span class="org">Villages &mdash; Full-Stack AI Learning Platform</span>
+					<span class="date">USAII Hackathon 2026</span>
+				</div>
+				<div class="tags">
+					<span>React</span><span>FastAPI</span><span>Supabase</span><span>OpenRouter</span><span>Vercel</span>
+				</div>
+				<ul>
+					<li>
+						Designed and shipped a deployed full-stack platform that AI-matches learners into study cohorts,
+						with real-time discussion and an AI tutor &mdash; frontend and serverless-Python backend both live on
+						Vercel with a GitHub Actions CI gate, built end-to-end under hackathon time constraints
+						(<span class="todo">[add: number of users/cohorts served, if any]</span>).
+					</li>
+				</ul>
+			</div>
+
+			<div class="entry">
+				<div class="entry-header">
+					<span class="org">Study Assistant &mdash; Local RAG Study Tool</span>
+					<span class="date">Hack America 2026</span>
+				</div>
+				<div class="tags">
+					<span>Python</span><span>ChromaDB</span><span>Ollama</span><span>Streamlit</span>
+				</div>
+				<ul>
+					<li>
+						Built a privacy-first RAG tool that ingests three input formats &mdash; notes, PDFs, and images
+						&mdash; into ChromaDB for conversational querying, running fully offline via local Ollama
+						inference so no data leaves the machine &mdash; a security-conscious design for sensitive
+						material.
+					</li>
+				</ul>
+			</div>
+		</div>
+
 		<!-- Leadership & Extracurriculars -->
 		<div class="section">
 			<div class="section-title">Leadership &amp; Extracurriculars</div>
@@ -267,15 +358,48 @@
 					IOAI qualification; self-studying classical ML, deep learning, NLP, and computer vision.
 				</li>
 				<li>
-					<strong>VEX Robotics</strong> &mdash; ICS Bangkok (2025&ndash;26): qualified for nationals with team.
-					Bull Run Middle School (2020&ndash;22): qualified to States as an individual competitor.
+					<strong>VEX Robotics</strong> &mdash; Multi-year competitor; collaborative robot design, build, and
+					programming on a team (ICS Bangkok) and as an individual competitor (Bull Run MS).
 				</li>
 				<li>
-					<strong>House of Blessings, Bangkok</strong> (2023&ndash;24) &mdash; Taught students Scratch programming
-					and Canva design, helping them bring creative ideas to life.
+					<strong>Chess</strong> &mdash; Competitive player rated ~1700, applying search and game-theory
+					concepts that connect directly to my AI and algorithms work.
 				</li>
 				<li>
-					<strong>Boy Scouts</strong> (2020) &mdash; Earned Programming and Robotics Merit Badges.
+					<strong>Honor Band (Trumpet)</strong> &mdash; Performs university-level repertoire in selected honor-band ensembles.
+				</li>
+			</ul>
+		</div>
+		<!-- Honors & Awards -->
+		<div class="section">
+			<div class="section-title">Honors &amp; Awards</div>
+			<ul>
+				<li>
+					<strong>VEX Robotics</strong> &mdash; Qualified for nationals (ICS Bangkok, 2025&ndash;26) and to
+					States as an individual competitor (Bull Run MS, 2020&ndash;22).
+				</li>
+				<li>
+					<strong>Global Citizen Award</strong> (2024) &mdash; Recognized for Theatre Tech contribution and
+					service.
+				</li>
+				<li>
+					<strong>Boy Scouts of America</strong> &mdash; Life rank; currently completing my Eagle Scout service
+					project (the BSA&rsquo;s highest rank) &mdash; leading the social-media buildout for the Saphan Siam
+						Foundation (see Community Service). Earned the Programming and Robotics Merit Badges (2020).
+				</li>
+			</ul>
+		</div>
+
+		<!-- Community Service -->
+		<div class="section">
+			<div class="section-title">Community Service</div>
+			<ul>
+				<li>
+					<strong>House of Blessings, Bangkok</strong> (2023&ndash;24) &mdash; Taught underserved students
+					Scratch programming and Canva design, helping them build and present their own creative projects.
+				</li>
+				<li>
+					<strong>Saphan Siam Foundation</strong> &mdash; see Work Experience above.
 				</li>
 			</ul>
 		</div>
