@@ -100,6 +100,14 @@
 			applicationCategory: 'ProductivityApplication',
 			programmingLanguage: ['Python'],
 		},
+		'/pages/project-pages/llm-protector.html': {
+			name: 'LLM Protector',
+			description:
+				'LLM Protector by Matt Gresham is a local LLM security scanner for prompt-injection and jailbreak testing, with a recorded demo replay and source code.',
+			type: 'SoftwareApplication',
+			applicationCategory: 'SecurityApplication',
+			programmingLanguage: ['Python', 'JavaScript'],
+		},
 		'/pages/project-pages/fitness-ai-agents.html': {
 			name: 'Fitness AI Agents',
 			description:

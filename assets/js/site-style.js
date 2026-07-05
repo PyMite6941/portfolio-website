@@ -106,7 +106,7 @@
 				<br /><br />
 				<a class="text-link" href="${p.store}">Visit my Store</a>
             </p>
-            <p style="text-align: center; font-size: 14px">&copy; 2026 Matt Gresham. All rights reserved.</p>
+            <p style="text-align: center; font-size: 14px">&copy; 2026 Matt Gresham. All rights reserved. &middot; <a class="text-link" href="https://tin.computer">Growth by Tin</a></p>
         </footer>`,
 	);
 

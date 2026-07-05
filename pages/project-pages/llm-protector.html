@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" data-depth="2">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg" />
+		<meta
+			name="description"
+			content="LLM Protector - Matt Gresham's local LLM security scanner for prompt-injection and jailbreak testing, with a recorded demo replay and source code." />
+		<link rel="canonical" href="https://pymite6941.is-a.dev/pages/project-pages/llm-protector.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="LLM Protector | Matt Gresham" />
+		<meta
+			property="og:description"
+			content="A local LLM security scanner for prompt-injection and jailbreak testing, with a recorded demo replay and source code." />
+		<meta property="og:url" content="https://pymite6941.is-a.dev/pages/project-pages/llm-protector.html" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="LLM Protector | Matt Gresham" />
+		<meta
+			name="twitter:description"
+			content="A local LLM security scanner for prompt-injection and jailbreak testing, with a recorded demo replay and source code." />
+		<link rel="stylesheet" type="text/css" href="../../index.css" />
+		<title>LLM Protector | Matt G</title>
+		<script src="../../assets/js/site-style.js" defer></script>
+	</head>
+	<body>
+		<div id="site-nav"></div>
+		<header class="hero-section">
+			<h1>LLM Protector</h1>
+			<p class="hero-copy">A local LLM security scanner for prompt-injection and jailbreak testing</p>
+		</header>
+		<main>
+			<div id="top"></div>
+			<p class="project-page-nav">
+				<a class="text-link" href="../projects.html">All projects</a>
+				&nbsp;·&nbsp;
+				<a class="text-link" href="../about-me.html">About Matt</a>
+				&nbsp;·&nbsp;
+				<a class="text-link" href="cybersecurity-lab.html">Cybersecurity Lab</a>
+			</p>
+			<a
+				class="text-link"
+				href="https://llm-protector.vercel.app"
+				target="_blank"
+				rel="noreferrer"
+				data-track-event="project_link_click"
+				data-track-title="LLM Protector"
+				data-track-slug="llm-protector"
+				data-track-kind="live_demo"
+				>Try the recorded scan demo</a
+			>
+			<br />
+			<a
+				class="text-link"
+				href="https://github.com/PyMite6941/LLM-Protector"
+				target="_blank"
+				rel="noreferrer"
+				data-track-event="project_link_click"
+				data-track-title="LLM Protector"
+				data-track-slug="llm-protector"
+				data-track-kind="source"
+				>View LLM Protector source code</a
+			>
+			<br /><br />
+			<h2 style="text-align: center">Description</h2>
+			<br />
+			<article>
+				<strong style="color: var(--text-color)">Motivation:</strong> LLM Protector
+				connects Matt's AI and security work in one project. It gives a local model a
+				set of prompt-injection and jailbreak probes so the behavior can be inspected
+				instead of only described.
+				<br /><br />
+				<strong style="color: var(--text-color)">What it does:</strong> Runs 50
+				attacks across 11 categories against a local LLM, then grades the results with
+				a severity-weighted risk score. The headless benchmark path can compare
+				multiple models, and the public demo replays a recorded scan instantly.
+				<br /><br />
+				<strong style="color: var(--text-color)">How to inspect it:</strong> Start
+				with the recorded demo to see the scan flow and result summary without running
+				a local model. Then inspect the source code to see the FastAPI, React, Ollama,
+				and benchmark pieces behind the scanner.
+				<br /><br />
+				<strong style="color: var(--text-color)">Current proof:</strong> This page
+				presents a scanner, replayable demo, and source repo. It does not claim that a
+				model is safe for production use.
+			</article>
+			<br />
+			<h2 style="text-align: center">Scan Flow</h2>
+			<br />
+			<div class="ascii-diagram">  LLM Protector - Local Model Probe
+  =====================================
+
+  prompt-injection + jailbreak tests
+      |
+      v
+  FastAPI scanner
+      |
+      +-- sends 50 attacks across 11 categories
+      +-- records model responses
+      +-- applies severity-weighted scoring
+      |
+      v
+  React demo
+      |
+      +-- replays a recorded scan
+      +-- shows category results
+      +-- links back to source for inspection</div>
+			<br />
+			<h2 style="text-align: center">Dev Notes</h2>
+			<div class="dev-notes">
+				<div class="dev-note">
+					<h3>Problem Solved</h3>
+					<p>
+						LLM security pages can become generic quickly. This project keeps the
+						use case concrete: run or replay prompt-injection and jailbreak tests
+						against a local model and inspect the scored result.
+					</p>
+				</div>
+				<div class="dev-note">
+					<h3>Technical Highlights</h3>
+					<p>
+						The scanner separates the benchmark path from the replay path. That
+						lets visitors inspect the recorded demo quickly while the source shows
+						how the local-model benchmark is structured.
+					</p>
+				</div>
+				<div class="dev-note">
+					<h3>What's Next</h3>
+					<p>
+						The useful next proof would be more documented scan examples and
+						clearer comparison notes between tested model runs, without turning the
+						page into a production security promise.
+					</p>
+				</div>
+			</div>
+			<br />
+			<a class="text-link" href="#top">Back to top</a>
+			<br />
+		</main>
+		<div id="site-footer"></div>
+	</body>
+</html>
